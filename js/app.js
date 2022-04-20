@@ -90,6 +90,8 @@ function myFunction() {
     var monthly_cost = ((DailyLimitTxt.value / CarFualAvarageTxt.value)*fualaPriceTxt)*daysTxt.value;
     console.log(monthly_cost);
    // ('#largeModal').modal('show');
+   document.getElementById("p1").innerHTML =  (Math.round(monthly_cost * 100) / 100).toFixed(2); ;
+   $('#exampleModal').modal('show');
    
 
   }
