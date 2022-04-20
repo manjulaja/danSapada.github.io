@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- Check Symbol -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check" viewBox="0 0 16 16">
+            <title>Check</title>
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+            </path>
+        </symbol>
+    </svg>
+
+    <!--Header-->
+    <header id="header">
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav-bar">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#home" id="header-img">LOGO
+                    <!-- Place Your Logo Here -->
+                    <!-- <img src="..." class="img-fluid" width="50" height="50"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="links">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" id="homeBtnNavLink" aria-current="page"
+                                href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-muted" id="featuresBtnNavLink"
+                                href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-muted" id="pricingBtnNavLink" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-muted" id="contactusBtnNavLink" href="#contactus">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <div class="container" id="home">
+        <!-- Hero Section -->
+        <div class="jumbotron positionCenter" id="heroSection">
+            <h1 class="display-1">Dan Sappada</h1>
+            <p class="lead text-center">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                attention
+                to featured content or information.</p>
+            <!-- <hr class="my-4"> -->
+            <!-- <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure> -->
+            <!-- <div class="mb-3" id="form"> -->
+                <!-- Email Input -->
+                <!-- <input type="email" class="form-control" id="email" placeholder="name@example.com"> -->
+            <!-- </div> -->
+            <!-- <a class="btn btn-primary btn-lg" href="https://www.freecodecamp.com/email-submit" role="button"
+                id="submit">Order Now</a> -->
+        </div>
+    </div>
+
+    <!-- Features -->
+    
+    <!-- Contact Us -->
+    <div class="container mt-5 pt-5" id="contactus">
+        <h2 class="display-2 fw-light text-center mb-2">
+            Contact Us
+        </h2>
+        <!-- Muted Text -->
+        <!-- <p class="fs-5 text-muted text-center">Quickly build an effective pricing table for your potential customers
+            with this Bootstrap example. It’s built with default Bootstrap components and utilities with little
+            customization.</p> -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 col-xxl-6 mt-5 mb-3">
+                <label for="formGroupExampleInput" class="form-label">Daily running range දවසේ දාවන දුර </label>
+                <input type="text" class="form-control" id="DailyLimitTxt" placeholder="10">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 col-xxl-6 mt-5 mb-3">
+                <label for="formGroupExampleInput" class="form-label"> Average fuel range සාමාන්ය ඉන්ධන පරාසය </label>
+                <input type="text" class="form-control" id="CarFualAvarageTxt" placeholder="John Doe">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 col-xxl-6 mt-5 mb-3">
+                <label for="formGroupExampleInput" class="form-label">Fuel prices ඉන්ධන මිල</label>
+                <form id="test">
+                <!-- <input type="text" class="form-control" id="fualaPriceTxt" placeholder="John Doe"> -->
+                <!-- <label class="radio-inline"><input type="radio" name="optradio" checked>Lanka Petrol 92 Octane</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Lanka Petrol 95 Octane Euro 4 2</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Lanka Auto Diesel</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Lanka Super Diesel 4 Star Euro 4</label> -->
+
+                <form id="test">
+                    <label><input type="radio" name="test" value="338" checked> Petrol 92 Octane</label>
+                    <label><input type="radio" name="test" value="373" > Petrol 95 Octane</label>
+                    <label><input type="radio" name="test" value="289"> Auto Diesel</label>
+                    <label><input type="radio" name="test" value="329"> Auto Diesel Super</label>
+                    </form>
+            </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 col-xxl-6 mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Office days count
+ කාර්යාල දින ගණන්</label>
+                <input type="email" class="form-control" id="daysTxt"
+                    placeholder="example@somewhere.com">
+            </div>
+        </div>
+        <div class="mb-5" id="btn">
+            <!-- <input class="btn btn-outline-primary" type="submit" value="Submit"> -->
+            <button class="btn btn-outline-primary" onclick="myFunction()">Click me</button>
+        </div>
+    </div>
+ 
+   
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <div class="row">
+                <span class="col-6 d-flex justify-content-start text-muted">Copyrighted © 2020</span>
+                <span class="col-6 d-flex justify-content-end">
+                    <a href="https://github.com/sshehrozali" alt="github-username/sshehrozali">Shehroz Ali</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
